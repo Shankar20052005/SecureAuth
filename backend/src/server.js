@@ -5,9 +5,9 @@ import connectDB from "./configs/db.js";
 import bodyParser from "body-parser";
 import cors from 'cors';
 import router from "./routes/authRoutes.js";
+import productRouter from "./routes/productRoutes.js";
 
 dotenv.config();
-
 connectDB();
 
 const app = express();
@@ -18,6 +18,7 @@ app.use(cors());
 
 //default endpoint route
 app.use('/auth', router);
+app.use('/product', productRouter); //Product Route
 
 //Route and Callback Fn in the GET HTTP Req
 app.get('/', (req,res)=>{
