@@ -1,12 +1,37 @@
-# Node modules
+# === Node Modules ===
 node_modules/
 
-# Environment variables
+# === Build Output ===
+dist/
+build/
+
+# === Vite Cache ===
+.vite/
+
+# === Environment Variables ===
 .env
+.env.*.local
 
-# Logs
-*.log
+# === Logs ===
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
 
-# Optional OS files
+# === IDEs and Editors ===
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# === OS Specific ===
 .DS_Store
 Thumbs.db
+
+# === TailwindCSS Cache ===
+.tailwind-cache/
+
+# === Optional: ZIP/RAR Files ===
+*.zip
+*.rar
